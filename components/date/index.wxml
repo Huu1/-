@@ -1,0 +1,11 @@
+<view class="container">
+    <div class="left">
+        <text class="front">No.</text>
+        <text class="_index">{{_index}}</text>
+        <text class="line"></text>
+    </div>
+    <view class="right">
+        <text class="month">{{month}}</text>
+        <text class="year">{{year}}</text>
+    </view>
+</view>

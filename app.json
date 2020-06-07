@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/classic/classic"
+  ],
+  "window":{
+      "navigationBarTitleText":"呼呼呼SSS",
+      "enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json"
+}

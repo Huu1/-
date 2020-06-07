@@ -1,0 +1,22 @@
+/* components/movie/index.wxss */
+.movie-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bgImg{
+    width: 750rpx;
+    height:500rpx;
+}
+.tagImg{
+    width: 46rpx;
+    height: 142rpx;
+    align-self: start;
+    margin-left: 35rpx;
+    margin-top: -60rpx;
+}
+.content{
+    font-size: 36rpx;
+    max-width: 550rpx;
+    margin-top: 50rpx;
+}

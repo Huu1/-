@@ -1,0 +1,19 @@
+/* components/nav/index.wxss */
+.container {
+  width: 600rpx;
+  height: 80rpx;
+  display: inline-flex;
+  flex-direction: row;
+  background: #f7f7f7;
+  margin-top: 150rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+}
+.icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+.title {
+  font-size: 28rpx;
+}

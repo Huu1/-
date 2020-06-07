@@ -1,0 +1,38 @@
+/* components/date/index.wxss */
+.container {
+  display: inline-flex;
+  height: 60rpx;
+}
+.left{
+    display: flex;
+    align-items: baseline;
+}
+.front{
+    font-size: 32rpx;
+}
+._index {
+  font-size: 60rpx;
+  line-height: 60rpx;
+  font-weight: 600;
+  margin-right: 10rpx;
+}
+.line{
+    height: 44rpx;
+    line-height: 44rpx;
+    margin-right: 8rpx;
+    border-left: 1px solid black;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rpx;
+  color: #c9c9c9;
+}
+.month{
+    line-height: 24rpx;
+    height: 24rpx;
+}
+.year{
+    font-size: 20rpx;
+}
+
