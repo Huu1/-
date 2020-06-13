@@ -9,12 +9,16 @@ class HTTP {
       1008: "路由错误",
     };
   }
-  
-  request(params) {
+  request(url, data = {}, method = "GET") {
+    return new Promise((resolve, reject) => {
+      this._request(url, resolve, reject, data, method);
+    });
+  }
+  _request(url, resolve, reject, data = {}, method = "GET") {
     wx.request({
-      url: config.API_BASE_URL + params.url,
-      method: params.method || "GET",
-      data:params.data,
+      url: config.API_BASE_URL + url,
+      method,
+      data,
       header: {
         "content-type": "application/json",
         appkey: config.APPKEY,
@@ -22,12 +26,14 @@ class HTTP {
       success: (res) => {
         let code = res.data.error_code + "";
         if (res.statusCode == 200 && code.startsWith("0")) {
-          params.ok && params.ok(res.data);
+          resolve(res.data);
         } else {
+          reject();
           this._showError(res.data.error_code);
         }
       },
       fail: (err) => {
+        reject();
         wx.showToast({
           title: "网络错误",
           icon: "none",

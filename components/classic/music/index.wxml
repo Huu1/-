@@ -1,5 +1,5 @@
-<view class="container" hidden="{{hidden}}">
-    <image class="classic-img" src="{{img}}" />
+<view class="container">
+    <image class="classic-img {{playing?'.rotation':''}}" src="{{img}}" />
     <image class="player-img" bind:tap='isPlaying' src='{{!playing?pauseImg:playImg}}' />
     <image class='tag' src="./img/music@tag.png" />
     <text class="content">{{content}}</text>
